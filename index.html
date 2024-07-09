@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cloner</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <nav class="navbar">
+        <div class="search-box">
+            <input type="text" placeholder="search here" class="search-bar">
+            <button type="submit" class="search-btn">Search</button>
+            <select name="video-count" id="video-count">
+                <option value="5">5</option>
+                <option value="10">10</option>
+                <option value="15">15</option>
+                <option value="20">20</option>
+                <option value="25">25</option>
+            </select>
+        </div>
+    </nav>
+
+    <!-- if fully cloning should do sidebar but im not interested -->
+    <!-- filter --->
+
+
+    <div class="video-container">
+
+    </div>
+
+    <div class="modal" id="video-modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <iframe src="" width="800" height="600" id="video-iframe" allowfullscreen></iframe>
+        </div>
+    </div>
+    <script src="index.js"></script>
+</body>
+
+</html>
