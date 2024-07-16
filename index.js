@@ -8,7 +8,7 @@
     const close = document.querySelector('.close');
 
 
-    let api_key = "Enetr your own api key";
+    let api_key = "Enter your won api key here";
     let search_http = "https://www.googleapis.com/youtube/v3/search?";
     let duration_http = "https://www.googleapis.com/youtube/v3/videos?";
     let channel_http = 'https://www.googleapis.com/youtube/v3/channels?';
@@ -151,7 +151,7 @@
 
     //this is because I made the search bar a div instead of a form, if made a form enter would work
     //didnt think form was the right tag for the job
-    document.getElementById('search-bar').addEventListener('keydown', e => {
+    searchInput.addEventListener('keydown', e => {
         if (e.key === 'Enter') {
             e.preventDefault();
             document.getElementById('search-btn').click();
